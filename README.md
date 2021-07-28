@@ -62,15 +62,14 @@ Inside the void setup:
 <br><br>
     
 Inside void loop starting with the if condition which runs the rest of the code if the ESP connected successfuly:
-
+<br>
 <br>
 ```C++
+
 if (WiFi.status() == WL_CONNECTED){
-    
-  digitalWrite(power,LOW);
-          
+  digitalWrite(power,LOW);       
   while(WiFi.status() == WL_CONNECTED){
-  ```
+```
 
 
 Then the rest of the code will operate which use GET method to recieve the value from the database to either turning the LED ON or OFF, code is explained using comments.
