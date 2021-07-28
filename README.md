@@ -44,7 +44,7 @@ And also you need to write the path to getData.php file.<br>
 
 Inside the void setup:
 <br>
-Serial.begin(9600);
+```Serial.begin(9600);
     pinMode(LED_D8,OUTPUT); //--> LED port Direction output
     digitalWrite(LED_D8, LOW); //--> Turn off Led  
     pinMode(power,OUTPUT);  
@@ -52,7 +52,7 @@ Serial.begin(9600);
     WiFiManager wifiManager;
     wifiManager.resetSettings();
     wifiManager.autoConnect("ESP YASER WiFi Manager");
-    Serial.println("connected :)");
+    Serial.println("connected :)");```
 <br><br>
     
 Inside void loop starting with the if condition which runs the rest of the code if the ESP connected successfuly:
