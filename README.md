@@ -38,7 +38,7 @@ In the start you need to look for your IPv4 using CMD and ipconfig and write it 
 ```C++
 const char *host = "http://192.168.8.101";
 ```
-<br><br>
+<br>
 And also you need to write the path to getData.php file.<br>
 ```C++
 GetAddress = "/task/GetData.php";
@@ -70,10 +70,11 @@ if (WiFi.status() == WL_CONNECTED){
 ```
 <br>
 
+
 Then the rest of the code will operate which use GET method to recieve the value from the database to either turning the LED ON or OFF, code is explained using comments.
 
 
-
+<br>
 # Expirement Video
 
 <br>
