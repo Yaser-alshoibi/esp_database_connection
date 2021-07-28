@@ -88,4 +88,3 @@ https://user-images.githubusercontent.com/85786699/127403267-0164780f-dbd6-47f3-
 
 <br>
 
-I uploaded Arduino code to the repository.
