@@ -59,11 +59,13 @@ Inside void loop starting with the if condition which runs the rest of the code 
 
 
 <br>
-```if (WiFi.status() == WL_CONNECTED){
+```
+if (WiFi.status() == WL_CONNECTED){
     
   digitalWrite(power,LOW);
           
-  while(WiFi.status() == WL_CONNECTED){```
+  while(WiFi.status() == WL_CONNECTED){
+  ```
           
           
 
