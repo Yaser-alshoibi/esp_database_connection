@@ -35,14 +35,14 @@ Built in LED of ESP8266 is controlled by GPIO 2.
 **Note: this code is only comppitable with ESP8266, to use this code with ESP32 you need to change <ESP8266WiFi.h> library to <WiFi.h>, and <ESP8266HTTPClient.h> to <HTTPClient.h>, and <ESP8266WebServer.h> to <WebServer.h>**
 
 In the start you need to look for your IPv4 using CMD and ipconfig and write it into the constant host.
-` const char *host = "http://192.168.8.101";`
+``` const char *host = "http://192.168.8.101";```
 
 And also you need to write the path to getData.php file.
-` GetAddress = "/task/GetData.php";`
+``` GetAddress = "/task/GetData.php";```
 
 Inside the void setup:
 
-`Serial.begin(9600);
+```Serial.begin(9600);
     pinMode(LED_D8,OUTPUT); //--> LED port Direction output
     digitalWrite(LED_D8, LOW); //--> Turn off Led  
     pinMode(power,OUTPUT);  
@@ -50,18 +50,18 @@ Inside the void setup:
     WiFiManager wifiManager;
     wifiManager.resetSettings();
     wifiManager.autoConnect("ESP YASER WiFi Manager");
-    Serial.println("connected :)");`
+    Serial.println("connected :)");```
     
     
 Inside void loop starting with the if condition which runs the rest of the code if the ESP connected successfuly:
 
 
 
-`if (WiFi.status() == WL_CONNECTED){
+```if (WiFi.status() == WL_CONNECTED){
     
           digitalWrite(power,LOW);
           
-          while(WiFi.status() == WL_CONNECTED){`
+          while(WiFi.status() == WL_CONNECTED){```
           
           
 
