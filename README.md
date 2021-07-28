@@ -1,7 +1,6 @@
-# ESP Connection
+# ESP Database Connection
 
-In this project, I have used ESP8266 to recieve a value from a database using GET method and by connecting the ESP to internet using WiFi Manager library.
-
+In this project, I have used ESP8266 to recieve a value from a database using GET method and by connecting the ESP to internet using WiFi Manager library.<br>
 
 # Database and Web Implementation
 
@@ -44,7 +43,7 @@ And also you need to write the path to getData.php file.<br>
 ```C++
 GetAddress = "/task/GetData.php";
 ```
-<br><br>
+<br>
 
 Inside the void setup:
 <br>
@@ -59,10 +58,9 @@ Inside the void setup:
   wifiManager.autoConnect("ESP YASER WiFi Manager");
   Serial.println("connected :)");
 ```
-<br><br>
+<br>
     
 Inside void loop starting with the if condition which runs the rest of the code if the ESP connected successfuly:
-<br>
 <br>
 ```C++
 
@@ -70,7 +68,7 @@ if (WiFi.status() == WL_CONNECTED){
   digitalWrite(power,LOW);       
   while(WiFi.status() == WL_CONNECTED){
 ```
-
+<br>
 
 Then the rest of the code will operate which use GET method to recieve the value from the database to either turning the LED ON or OFF, code is explained using comments.
 
@@ -78,7 +76,7 @@ Then the rest of the code will operate which use GET method to recieve the value
 
 # Expirement Video
 
-
+<br>
 
 
 https://user-images.githubusercontent.com/85786699/127403267-0164780f-dbd6-47f3-9b30-83656b6ed019.mp4
