@@ -12,6 +12,10 @@ Then I built four files:
 - updateDB.php > Updates Stat coloumn after clicking on the buttons in main.php interface.
 - GetData.php > To send the data and connect with ESP.
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/85786699/127405540-26815bc9-6ab3-4336-8e10-591a99c6fef7.png">
+<br> 
+Figure 1: Main.php interface</p>
 
 # Working Principle
 
@@ -22,7 +26,10 @@ I used ESP8266 module and an LED. First after plugging ESP on the user has to sc
 
 I will be using to LED, one is to be controlled be the interface, and the other LED is built-in LED within ESP8266 to indicate if it is connected or not.
 
-![image](https://user-images.githubusercontent.com/85786699/127397021-b9606876-f4a7-4876-aa7b-548cfa333162.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/85786699/127397021-b9606876-f4a7-4876-aa7b-548cfa333162.png">
+<br>
+Figure 2: Circuit Connection</p>
 
 
 
