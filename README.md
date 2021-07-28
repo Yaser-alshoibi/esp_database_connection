@@ -42,8 +42,7 @@ And also you need to write the path to getData.php file.
 
 Inside the void setup:
 
-`
-Serial.begin(9600);
+`Serial.begin(9600);
     pinMode(LED_D8,OUTPUT); //--> LED port Direction output
     digitalWrite(LED_D8, LOW); //--> Turn off Led  
     pinMode(power,OUTPUT);  
@@ -51,18 +50,19 @@ Serial.begin(9600);
     WiFiManager wifiManager;
     wifiManager.resetSettings();
     wifiManager.autoConnect("ESP YASER WiFi Manager");
-    Serial.println("connected :)");
-    `
+    Serial.println("connected :)");`
     
 Inside void loop starting with the if condition which runs the rest of the code if the ESP connected successfuly:
 
-`
-if (WiFi.status() == WL_CONNECTED){
+
+
+`if (WiFi.status() == WL_CONNECTED){
     
           digitalWrite(power,LOW);
           
-          while(WiFi.status() == WL_CONNECTED){
-`
+          while(WiFi.status() == WL_CONNECTED){`
+          
+          
 
 Then the rest of the code will operate which use GET method to recieve the value from the database to either turning the LED ON or OFF, code is explained using comments.
 
