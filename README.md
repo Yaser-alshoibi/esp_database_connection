@@ -39,7 +39,9 @@ In the start you need to look for your IPv4 using CMD and ipconfig and write it 
 const char *host = "http://192.168.8.101";
 ```
 <br>
+
 And also you need to write the path to getData.php file.<br>
+
 ```C++
 GetAddress = "/task/GetData.php";
 ```
@@ -75,6 +77,7 @@ Then the rest of the code will operate which use GET method to recieve the value
 
 
 <br>
+
 # Expirement Video
 
 <br>
@@ -83,3 +86,6 @@ Then the rest of the code will operate which use GET method to recieve the value
 https://user-images.githubusercontent.com/85786699/127403267-0164780f-dbd6-47f3-9b30-83656b6ed019.mp4
 
 
+<br>
+
+I uploaded Arduino code to the repository.
